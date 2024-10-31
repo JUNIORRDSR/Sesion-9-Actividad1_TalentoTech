@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        
+        <h1>
+            Calculos Matematicos
+        </h1>
+        <input type="number" placeholder="Ingrese numero A" id="numero_a" >
+        <input type="number" placeholder="Ingrese numero A" id="numero_b" >
+            <button onclick="Operacion()">Sumar</button>>
+        <span id="result_suma"></span>>
+    </main>
+
+    
+    <script>
+        
+        function Operacion(){
+            let a = 0, b = 0;
+            a = parseInt(document.getElementById("numero_a").value);
+            b = parseInt(document.getElementById("numero_b").value);
+            document.getElementById("result_suma").innerHTML = a+b;
+            console.log(a+b);
+        }
+    </script>
+
+</body>
+</html>
