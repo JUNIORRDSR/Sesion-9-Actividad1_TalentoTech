@@ -1,36 +1,43 @@
 <!DOCTYPE html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="">
 </head>
+
 <body>
     <header>
 
     </header>
 
     <main>
-        
+
         <h1>
             Calculos Matematicos
         </h1>
-        <input type="number" placeholder="Ingrese numero A" id="numero_a" >
-        <input type="number" placeholder="Ingrese numero A" id="numero_b" >
+        <div>
+            <input type="number" placeholder="Ingrese numero A" id="numero_a">
+            <input type="number" placeholder="Ingrese numero A" id="numero_b">
             <button onclick="Operacion()">Sumar</button>>
-        <span id="result_suma"></span>>
+            <span id="result_suma"></span>>
+        </div>
+
     </main>
 
-    
+
     <script>
-        
-        function Operacion(){
+
+        function Operacion() {
             let a = 0, b = 0;
             a = parseInt(document.getElementById("numero_a").value);
             b = parseInt(document.getElementById("numero_b").value);
-            document.getElementById("result_suma").innerHTML = a+b;
-            console.log(a+b);
+            document.getElementById("result_suma").innerHTML = a + b;
+            console.log(a + b);
         }
     </script>
 
 </body>
+
 </html>
