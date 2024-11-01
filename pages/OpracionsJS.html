@@ -18,23 +18,34 @@
             Calculos Matematicos
         </h1>
         <div>
-            <input type="number" placeholder="Ingrese numero A" id="numero_a">
-            <input type="number" placeholder="Ingrese numero A" id="numero_b">
-            <button onclick="Operacion()">Sumar</button>>
-            <span id="result_suma"></span>>
+            <input type="number" placeholder="Ingrese numero A" id="numero_a" value="0">
+            <input type="number" placeholder="Ingrese numero A" id="numero_b" value="0">
+            <ul>
+
+            </ul>
+            <button onclick="Calcular('suma')">Sumar</button>
+            <span id="result_suma"></span>
+            <br>
+            <h2>Completar operciones faltantes</h2>
         </div>
 
     </main>
 
 
     <script>
+        // La funcion calcular se crea para devolver los valores de las operaciones seleccionadas
+        // y su parametro se encarga de recoger el texto o valor que uno le ingrese al aplicar el onclick en el boton
+        function Calcular(Operacion) {
+            let a = parseInt(document.getElementById("numero_a").value);
+            let b = parseInt(document.getElementById("numero_b").value);
 
-        function Operacion() {
-            let a = 0, b = 0;
-            a = parseInt(document.getElementById("numero_a").value);
-            b = parseInt(document.getElementById("numero_b").value);
-            document.getElementById("result_suma").innerHTML = a + b;
-            console.log(a + b);
+            switch (Operacion) {
+                case "suma":
+                document.getElementById("result_suma").innerHTML = a + b;
+                console.log(a + b);
+                    break;
+                case 'resta':
+            }
         }
     </script>
 
