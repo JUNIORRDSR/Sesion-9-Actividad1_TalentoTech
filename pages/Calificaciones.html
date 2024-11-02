@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Laboratorio 11-12</h1>
+    </header>
+
+    <main>
+        <h2>Verificacion de calificaciones</h2>
+        <p>Ingrese su calificacion del 1 al 100</p>
+        <input type="number" placeholder="Ingrese la nota" id="nota" required minlength="0" maxlength="100">
+        <button onclick="calificacion()">Enviar</button>
+        <p id="mensaje"></p>
+        
+        <h2>Determinacion numero par o impar</h2>
+        <p>Ingrese un numero para determinar si es par o impar</p>
+        <input type="number" placeholder="Ingrese un valor" id="numero_par_impar">
+        <button onclick="parImpar()">Enviar</button>
+        <p id="mensaje2"></p>
+
+        <h2>Evaluacion de Descuentos</h2>
+        <p>Ingrese el monto total de su compra</p>
+        <input type="number" placeholder="Monto total" id="descuento">
+        <button onclick="descuentos()">Enviar</button>
+        <p id="mensaje3"></p>
+    </main>
+
+    <footer>
+
+    </footer>
+    
+    <script>
+        function calificacion(){
+            let valor = document.getElementById('nota').value;
+            if(valor>=90){
+                document.getElementById('mensaje').innerText = "Aprobado con honores" ;
+            }else if(valor>=70 & valor <90){
+                document.getElementById('mensaje').innerText = "Aprobado" ;
+            }else{
+                document.getElementById('mensaje').innerText = "Reprobado" ;
+            }
+        }
+        function parImpar(){
+            let valor = document.getElementById('numero_par_impar').value;
+            if((valor%2) == 0){
+                document.getElementById('mensaje2').innerText = `El numero ${valor} es par`;
+            }else{
+                document.getElementById('mensaje2').innerText = `El numero ${valor} es impar`;
+            }
+        }
+
+        function descuentos(){
+            let monto = document.getElementById('descuento').value;
+            if(monto > 100){
+                monto= monto*0,1;
+                document.getElementById('mensaje3').innerText = `Se aplico descuento del 10% al monto y el valor actual es: ${monto}`;
+            }
+        }
+    </script>
+
+</body>
+</html>

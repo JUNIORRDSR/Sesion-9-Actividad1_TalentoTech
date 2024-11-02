@@ -1,0 +1,21 @@
+#navegacion{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: black;
+}
+ul{
+    display: flex;
+    text-emphasis-color: black;
+}
+li{
+    padding: 15px;
+    margin: auto;
+    background-color: white;
+    border-radius: 2%;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
