@@ -1,28 +1,21 @@
-ul {
-   padding: 0.5%;
-   background-color: black; 
-   display: block;
-   
-}
-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    width: 80%;
+#navegacion{
+    width: 100%;
     margin: 0 auto;
-}
-li {
-    flex: 1 1 25%;
-    margin: 1%;
     text-align: center;
-    background-color: white;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: black;
 }
-
-#logo {
-    width: 1.5%;
-    height: auto;
+ul{
+    display: flex;
+    text-emphasis-color: black;
+}
+li{
+    padding: 15px;
+    margin: auto;
+    background-color: white;
+    border-radius: 2%;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
